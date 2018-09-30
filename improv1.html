@@ -8,13 +8,25 @@
       <!-- link to Bootstrap CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+      <!-- the row > div applies the style to the immediate "children" of row -->
       <style>
+      #pagetitle {
+        text-align: center;
+      }
       .centered-image-container {
           text-align: center;
       }
       .centered-image {
           width: auto;
           max-width: 50%;
+      }
+      .nav-link.active, .gametitle {
+          font-weight: bold;
+      }
+      .row.improvgame > div {
+          padding: 20px;
+          background-color: lightcyan;
+          border: 8px solid white;
       }
       </style>
 
@@ -27,7 +39,7 @@
           <a class="nav-link" href="index.html">Intro</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#"><b>Improv Games 1</b></a>
+          <a class="nav-link active" href="#">Improv Games 1</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="improv2.html">Improv Games 2</a>
@@ -37,5 +49,39 @@
         </li>
       </ul>
 
+      <h1 id="pagetitle">Improv Games 1</h1>
+
+      <div class="container">
+        <div class="row improvgame">
+          <div class="col-lg-3 col-sm-6">
+            <span class="gametitle">Wrong door -</span> you go confident into a room only to realise it's the wrong room. Sudden drop in status as you seek to extricate yourself.</div>
+          <div class="col-lg-3 col-sm-6">
+            <span class="gametitle">Shop -</span> audience put items in virtual shop. Actors then act using those items.</div>
+          <div class="col-lg-3 col-sm-6">
+            <span class="gametitle">Die! -</span> actors need to talk seamlessly and continuously as they are pointed towards by lead. Anyone who hesitates or deviates is told to Die!</div>
+          <div class="col-lg-3 col-sm-6">
+            <span class="gametitle">"Boris!" -</span> one actor is policeman and the other is guilty criminal. Actor asked outlandish questions about crime (why was there a turkey baster at the scene?) and calls in imaginary policeman Boris when actor can't answer.</div>
+        </div>
+        <div class="row improvgame">
+          <div class="col-lg-3 col-sm-6">
+            <span class="gametitle">Typewriter -</span> one actor is at the typewriter directing the others through different scenes.</div>
+          <div class="col-lg-3 col-sm-6">
+            <span class="gametitle">Emotions party -</span> audience gives each actor and emotion.  As each enters party everyone picks up that emotion. As people leave last first, emotion reverts to that of the person still there who entered last.</div>
+          <div class="col-lg-3 col-sm-6">
+            <span class="gametitle">Sexy/Smelly/Funny -</span> each actor decides privately which of the winning other actors is Sexy, smelly, or funny. They each enter party with gifts chosen by the audience and hilarity ensues.</div>
+          <div class="col-lg-3 col-sm-6">
+            <span class="gametitle">3 headed expert -</span> 3 actors are one expert (expertise chosen by the audience), interviewed by the remaining actor. They need to answer questions in unison and reflect each others body language.</div>
+        </div>
+        <div class="row improvgame">
+          <div class="col-lg-3 col-sm-6">
+            <span class="gametitle">Change! -</span> 2 actors act scene while other calls on them to "change" at strategic points. Fast firing the changes can cause actors to come up with things that are all the more amusing.</div>
+          <div class="col-lg-3 col-sm-6">
+            <span class="gametitle">Endline -</span> audience choses an endline and an occupation. Two actors have to get to that line.</div>
+          <div class="col-lg-3 col-sm-6">
+            <span class="gametitle">Continuation -</span> two actors start a scene (audience choses who they are) and at key point two other actors have to continue where they left off.</div>
+          <div class="col-lg-3 col-sm-6">
+            <span class="gametitle">Little voice -</span> one actor is on stage (location chosen by audience) when they hear voice of other actor off stage. They have to discover who voice is.</div>
+        </div>
+      </div>
     </body>
 </html>

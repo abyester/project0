@@ -9,6 +9,9 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
       <style>
+      #pagetitle {
+        text-align: center;
+      }
       .centered-image-container {
           text-align: center;
       }
@@ -16,6 +19,49 @@
           width: auto;
           max-width: 50%;
       }
+      .nav-link.active, .gametitle {
+          font-weight: bold;
+      }
+      .row.improvgame > div {
+          padding: 20px;
+          background-color: lightcyan;
+          border: 8px solid white;
+      }
+      table {
+          border: 2px solid black;
+          border-collapse: collapse;
+          width:90%;
+          margin-left:5%;
+          margin-right:5%;
+          }
+      th, td {
+          border: 1px solid black;
+          padding: 5px;
+          vertical-align: top;
+          }
+
+      th {
+          background-color: lightgray;
+          }
+      ol {
+          margin-bottom: 0;
+              }
+      h3 {
+          font-size: 1.25rem;
+          font-style: italic;
+          margin-bottom: 1.5rem;
+        }
+        @media (min-width: 500px) {
+            h3::before {
+                content: "Good improvisation relies on authenticity, being in the moment.  The Meisner technique can help ensure your focus is on the on the other actor and that you are responding to the situation before you, not in your head.";
+            }
+        }
+
+        @media (max-width: 499px) {
+            h3::before {
+                content: "Good improvisation relies on authenticity.  The Meisner technique can help you respond to the situation before you.";
+            }
+        }
       </style>
 
       <title>Learn about Meisner</title>
@@ -33,9 +79,61 @@
           <a class="nav-link" href="improv2.html">Improv Games 2</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#"><b>Meisner</b></a>
+          <a class="nav-link active" href="#">Meisner</a>
         </li>
       </ul>
+      <!--pagetitle -->
+      <h1 id="pagetitle">Learning about Meisner</h1>
+
+      <!--container containing bootstrap "card" - row justified in centre-->
+      <!--m-3 property adds a margin around the card using bootstrap properties-->
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-lg-8 col-sm-12">
+            <div class="card m-3">
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>"Act before you think - your instincts are more honest than your thoughts."</p>
+                  <footer class="blockquote-footer">Quote from <cite title="Source Title">Sanford Meisner on Acting</cite></footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-sm-12">
+            <h3> </h3>
+          </div>
+        </div>
+      </div>
+
+      <table>
+          <tr>
+              <th>Repetition Stage</th>
+              <th>Details</th>
+          </tr>
+          <tr>
+              <td>Basic repetition</td>
+              <td>Say something truthful about the other person and then that person repeats from their perspective.  Start with something basic like
+                "you're wearing a blue shirt" to which they reply "I'm wearing a blue shirt".  Continue to repeat what you hear
+                until something happens that makes you change.</td>
+          </tr>
+          <tr>
+              <td>More advanced repetition</td>
+              <td>There’s no need to change what you say or how you say it unless you see something new occurring. Simply put: if you see the person fidgeting
+                and biting their lip, you may believe they are nervous, then say it and continue to repeat (until one of you sees some new change occuring).</td>
+          </tr>
+          <tr>
+              <td>Rinse and repeat</td>
+              <td>There are three rules for repetition:
+                <ol id="nomarglist">
+                  <li>Tell the Truth</li>
+                  <li>If in doubt Repeat</li>
+                  <li>Dont stop playing the game</li>
+                </ol>
+                Keep playing if you get it right, get it wrong or completely mess it up. Place your focus on your partner and play until told to stop.
+                Say what you see regardless of politeness - to be able to act truthfully in a wide range of imaginary circumstance you must be unrestricted by social niceties.
+              </td>
+          </tr>
+      </table>
 
     </body>
 </html>
