@@ -1,0 +1,65 @@
+/* setting variables for the two main colours used in the site */
+#pagetitle {
+  text-align: center;
+}
+
+.centered-image-container {
+  text-align: center;
+}
+.centered-image-container .centered-image {
+  width: auto;
+  max-width: 50%;
+}
+
+.nav-link.active, .gametitle {
+  font-weight: bold;
+}
+
+/*. any div under the .row.improvgame div will have properties below - example of nesting .*/
+/*  have added div odd and even to allow alternate colours by cells .*/
+.row.improvgame div.even, .row.improvgame div.odd {
+  padding: 20px;
+  border: 8px solid white;
+}
+
+.row.improvgame div.odd {
+  background-color: lightcyan;
+}
+.row.improvgame div.even {
+  background-color: powderblue;
+}
+
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/*. define basic properties of tablecell and then apply to table data (td) and table header (th), extending table header - example of inheritance .*/
+th, td {
+  border: 1px solid black;
+  padding: 5px;
+  vertical-align: top;
+}
+
+td {
+  background-color: powderblue;
+}
+
+th {
+  background-color: lightcyan;
+}
+
+ol {
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+/*# sourceMappingURL=improv.scs.map */

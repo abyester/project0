@@ -8,49 +8,12 @@
       <!-- link to Bootstrap CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-      <style>
-      #pagetitle {
-        text-align: center;
-      }
-      .centered-image-container {
-          text-align: center;
-      }
-      .centered-image {
-          width: auto;
-          max-width: 50%;
-      }
-      .nav-link.active, .gametitle {
-          font-weight: bold;
-      }
-      .row.improvgame > div {
-          padding: 20px;
-          background-color: lightcyan;
-          border: 8px solid white;
-      }
-      table {
-          border: 2px solid black;
-          border-collapse: collapse;
-          width:90%;
-          margin-left:5%;
-          margin-right:5%;
-          }
-      th, td {
-          border: 1px solid black;
-          padding: 5px;
-          vertical-align: top;
-          }
+      <!-- link to manually created stylesheet - this is created from the scss file improv.scss -->
+      <link rel="stylesheet" href="improv.scs">
 
-      th {
-          background-color: lightgray;
-          }
-      ol {
-          margin-bottom: 0;
-              }
-      h3 {
-          font-size: 1.25rem;
-          font-style: italic;
-          margin-bottom: 1.5rem;
-        }
+      <!-- have kept these media elements in html file as they relate more to the content of the page - basically more content for bigger screens
+      , a shorter version for smaller ones -->
+      <style>
         @media (min-width: 500px) {
             h3::before {
                 content: "Good improvisation relies on authenticity, being in the moment.  The Meisner technique can help ensure your focus is on the on the other actor and that you are responding to the situation before you, not in your head.";
@@ -67,7 +30,7 @@
       <title>Learn about Meisner</title>
     </head>
     <body>
-      <!-- nav item taken from bootstrap 4 -->
+        <!-- nav item taken from bootstrap 4 - I have manually added a property to the active link class in the style sheet (bold)-->
       <ul class="nav">
         <li class="nav-item">
           <a class="nav-link" href="index.html">Intro</a>
@@ -85,8 +48,8 @@
       <!--pagetitle -->
       <h1 id="pagetitle">Learning about Meisner</h1>
 
-      <!--container containing bootstrap "card" - row justified in centre-->
-      <!--m-3 property adds a margin around the card using bootstrap properties-->
+      <!--container containing bootstrap "card" - row justified in centre lg and sm cols refer to how many collumns (of 12) the card takes up
+      on small and large screens - m-3 property adds a margin around the card using bootstrap properties !-->
       <div class="container">
         <div class="row justify-content-md-center">
           <div class="col-lg-8 col-sm-12">
